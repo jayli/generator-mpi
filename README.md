@@ -1,6 +1,8 @@
-# generator-mpi
+## generator-mpi
 
-# KISSY MINI 模块代码脚手架工具
+- by bachi@taobao.com
+
+### KISSY MINI 模块代码脚手架工具
 
 ![](https://gw.alicdn.com/tps/TB15OqcJXXXXXcAXFXXXXXXXXXX-552-276.png_300x300.jpg)
 
@@ -70,3 +72,5 @@ KISSY MINI 模块包代码只能通过 bower 来管理，因此非常干净，�
 请注意版本的写法和依赖模块的写法，bower.json 是模块唯一最重要的配置文件
 
 模块的研发完全基于Demo，无构建和特别的本地环境的配置，因此非常干净简单，代码存储直接提交在gitlab里即可，他人安装此模块只需通过bower install即可。模块文件是需要被具体的项目脚本构建的，构建工具参照[grunt-kmb](https://www.npmjs.com/package/grunt-kmb)或者[gulp-kmc](https://www.npmjs.com/package/gulp-kmc)。阿里旅行前端同学请使用 clam 构建工具来生成项目.
+
+
