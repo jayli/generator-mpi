@@ -9,6 +9,7 @@ by bachi@taobao.com
 [![gemnasium deps][gemnasium-image]][gemnasium-url]
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
+[![](http://b.repl.ca/v1/command-line-green.png)]()
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jayli/generator-mpi)
 
 [npm-image]: http://img.shields.io/npm/v/modulex-util.svg?style=flat-square
@@ -21,10 +22,10 @@ by bachi@taobao.com
 [coveralls-url]: https://coveralls.io/r/kissyteam/util?branch=master
 [gemnasium-image]: http://img.shields.io/gemnasium/kissyteam/util.svg?style=flat-square
 [gemnasium-url]: https://gemnasium.com/kissyteam/util
-[node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
+[node-image]: https://img.shields.io/badge/node.js-%3E=_0.12-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
-[download-image]: https://img.shields.io/npm/dm/modulex-util.svg?style=flat-square
-[download-url]: https://npmjs.org/package/modulex-util
+[download-image]: https://img.shields.io/npm/dm/generator-mpi.svg?style=flat-square
+[download-url]: https://npmjs.org/package/generator-mpi
 
 
 ### KISSY MINI 模块代码脚手架工具
