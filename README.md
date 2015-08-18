@@ -1,5 +1,7 @@
 ## generator-mpi
 
+[![Join the chat at https://gitter.im/jayli/generator-mpi](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jayli/generator-mpi?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 by bachi@taobao.com
 
 ### KISSY MINI 模块代码脚手架工具
