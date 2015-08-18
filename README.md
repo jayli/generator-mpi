@@ -1,6 +1,6 @@
 ## generator-mpi
 
-- by bachi@taobao.com
+by bachi@taobao.com
 
 ### KISSY MINI 模块代码脚手架工具
 
@@ -16,10 +16,6 @@
 	}
 
 这里的代码仓库前缀可以任意修改
-
-安装 KISSY MINI 模块时只需要执行
-
-	bower install mpi/widget-name
 
 ### 工具安装
 
@@ -72,6 +68,19 @@ KISSY MINI 模块包代码只能通过 bower 来管理，因此非常干净，�
 
 请注意版本的写法和依赖模块的写法，bower.json 是模块唯一最重要的配置文件
 
-模块的研发完全基于Demo，无构建和特别的本地环境的配置，因此非常干净简单，代码存储直接提交在gitlab里即可，他人安装此模块只需通过bower install即可。模块文件是需要被具体的项目脚本构建的，构建工具参照[grunt-kmb](https://www.npmjs.com/package/grunt-kmb)或者[gulp-kmc](https://www.npmjs.com/package/gulp-kmc)。阿里旅行前端同学请使用 clam 构建工具来生成项目.
+模块的研发完全基于本地 Demo 页面，无需构建和特别的本地环境配置，因此非常干净简单，代码存储直接提交在 gitlab 里即可，他人安装此模块只需通过`bower install`即可。模块文件是需要被具体的项目脚本构建的，构建工具参照[grunt-kmb](https://www.npmjs.com/package/grunt-kmb)或者[gulp-kmc](https://www.npmjs.com/package/gulp-kmc)。阿里旅行前端同学请使用 [clam](http://clam.alitrip.net) 构建工具来生成项目.
 
+因为已经安装好了`server-here`服务，代码checkout到本地后，直接在项目根目录中执行`here`，即可开启服务
 
+	here
+
+模块代码完成后，如需引用该模块，只需通过 bower 来安装该模块，例如：
+
+	bower install mpi/widget-name
+
+### Q & A
+
+1. 模块代码可否被发布到 npm 或 tnpm 上？答：可以，需要自己配`package.json`，但强烈不推荐这样做，因为从日常开发角度看，人肉保持 git 仓库中代码和远程 npm 仓库代码的版本一致性要消耗掉极高的成本，所以仅用git来保存代码可以尽可能保持简单可依赖
+1. KISSY MINI 的模块为什么不支持线上直接引用，就像 KISSY 1.4.x 和 KISSY 6.x 的组件都发布到线上一份一样？答：KISSY MINI 是面向移动设备研发的js库，性能优化方面，我们坚持资源离线的大的优化方向，资源离线后的瓶颈不在于资源个数，而在于资源体积和项目包（pkg）的内聚。即项目内原则上不会引用项目之外的资源，所以我们将 KISSY MINI 的开发规范和 bower 强绑定，所有的发布动作收敛到“项目发布”一个环节，而在组件和公用代码研发方面，不在单独走发布了，这样剔除了在线引用、强调离线资源引用，就极大的简化了模块代码和项目代码的耦合方式。
+1. KISSY MINI 还支持 Combo 吗？答：1.x 及后续版本不在支持Combo，代码的合并完全交给构建工具去完成。
+1. 基于 KISSY MINI 的模块代码为什么不需要构建？答：因为不需要发布到线上，所以我干脆就把构建给干掉了，构建的动作一律收敛到项目中，模块中的研发约定保持最简。
