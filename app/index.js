@@ -2,6 +2,7 @@
 var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
+var ABC = require('abc-generator');
 var Promise = require('promise');
 var Logo = require('./logo').Logo;
 var exec = require('child_process').exec;
@@ -11,7 +12,8 @@ var gitConfig = require('git-config'),
 	curUserEmail = curGitUser.email;
 
 var MyGenerator = module.exports = function MyGenerator(args, options, config) {
-	this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
+
+	ABC.UIBase.apply(this, arguments);
 
 	this.on('error', function () {
 	});
@@ -47,7 +49,7 @@ var MyGenerator = module.exports = function MyGenerator(args, options, config) {
 	}.bind(this));
 };
 
-// util.inherits(MyGenerator, ABC.UIBase);
+util.inherits(MyGenerator, ABC.UIBase);
 
 MyGenerator.prototype.askFor = function askFor() {
 	var cb = this.async();
@@ -146,7 +148,7 @@ MyGenerator.prototype.app = function app() {
 	this.template('demo/index.html', 'demo/index.html');
 
 	// 测试用例资源文件
-	this.copy('test/lib/async.js', 'demo/index.html');
+	this.copy('test/lib/async.js', 'test/lib/async.js');
 	this.copy('test/lib/chai.js','test/lib/chai.js');
 	this.copy('test/lib/mocha.css','test/lib/mocha.css');
 	this.copy('test/lib/should.js','test/lib/should.js');

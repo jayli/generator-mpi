@@ -26,6 +26,7 @@
     "test": "mocha"
   },
   "dependencies": {
+    "abc-generator": "~0.1.5",
     "rmdir": "~1.0.4",
     "promise": "",
     "git-config": "0.0.6",
