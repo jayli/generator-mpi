@@ -5,23 +5,19 @@ by bachi@taobao.com
 [![NPM version][npm-image]][npm-url]
 [![Bower version][bower-image]][bower-url]
 [![build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
+[![Coverage Status](https://coveralls.io/repos/jayli/generator-mpi/badge.svg?branch=master&service=github)](https://coveralls.io/github/jayli/generator-mpi?branch=master)
 [![gemnasium deps][gemnasium-image]][gemnasium-url]
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 [![](http://b.repl.ca/v1/command-line-green.png)]()
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jayli/generator-mpi)
 
-[npm-image]: http://img.shields.io/npm/v/modulex-util.svg?style=flat-square
+[npm-image]: http://img.shields.io/npm/v/generator-mpi.svg?style=flat-square
 [npm-url]: http://npmjs.org/package/generator-mpi
 [bower-image]: http://img.shields.io/bower/v/generator-mpi.svg?style=flat-square
-[bower-url]: https://github.com/kissyteam/util
+[bower-url]: https://github.com/jayli/generator-mpi
 [travis-image]: https://img.shields.io/travis/kissyteam/util.svg?style=flat-square
 [travis-url]: https://travis-ci.org/kissyteam/util
-[coveralls-image]: https://img.shields.io/coveralls/kissyteam/util.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/kissyteam/util?branch=master
-[gemnasium-image]: http://img.shields.io/gemnasium/kissyteam/util.svg?style=flat-square
-[gemnasium-url]: https://gemnasium.com/kissyteam/util
 [node-image]: https://img.shields.io/badge/node.js-%3E=_0.12-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/generator-mpi.svg?style=flat-square
