@@ -1,0 +1,43 @@
+{
+  "name": "generator-mini",
+  "version": "0.1.0",
+  "description": "A Clam generator for Yeoman",
+  "keywords": [
+    "yeoman-generator",
+    "generator-mini"
+  ],
+  "homepage": "https://github.com/jayli/generator-mini",
+  "bugs": "https://github.com/jayli/generator-mini/issues",
+  "authors": [
+    {
+      "name": "bachi",
+      "email": "bachi@taobao.com",
+      "url": "http://jayli.github.io"
+    }
+  ],
+  "readmeFilename": "README.md",
+  "_from": "generator-clam@",
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+	"url": "git@github.com:jayli/generator-mini.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "rmdir": "~1.0.4",
+    "yeoman-generator": "~0.13.3"
+  },
+  "devDependencies": {
+    "mocha": "~1.10.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}
