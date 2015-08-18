@@ -2,6 +2,31 @@
 
 by bachi@taobao.com
 
+[![NPM version][npm-image]][npm-url]
+[![Bower version][bower-image]][bower-url]
+[![build status][travis-image]][travis-url]
+[![Test coverage][coveralls-image]][coveralls-url]
+[![gemnasium deps][gemnasium-image]][gemnasium-url]
+[![node version][node-image]][node-url]
+[![npm download][download-image]][download-url]
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jayli/generator-mpi)
+
+[npm-image]: http://img.shields.io/npm/v/modulex-util.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/generator-mpi
+[bower-image]: http://img.shields.io/bower/v/generator-mpi.svg?style=flat-square
+[bower-url]: https://github.com/kissyteam/util
+[travis-image]: https://img.shields.io/travis/kissyteam/util.svg?style=flat-square
+[travis-url]: https://travis-ci.org/kissyteam/util
+[coveralls-image]: https://img.shields.io/coveralls/kissyteam/util.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/kissyteam/util?branch=master
+[gemnasium-image]: http://img.shields.io/gemnasium/kissyteam/util.svg?style=flat-square
+[gemnasium-url]: https://gemnasium.com/kissyteam/util
+[node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
+[node-url]: http://nodejs.org/download/
+[download-image]: https://img.shields.io/npm/dm/modulex-util.svg?style=flat-square
+[download-url]: https://npmjs.org/package/modulex-util
+
+
 ### KISSY MINI 模块代码脚手架工具
 
 <img src="http://gw.alicdn.com/tps/TB13sGbJXXXXXbaXVXXXXXXXXXX-360-196.png" width="200" />
