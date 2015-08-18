@@ -8,7 +8,7 @@ by bachi@taobao.com
 [![Coverage Status](https://coveralls.io/repos/jayli/generator-mpi/badge.svg?branch=master&service=github)](https://coveralls.io/github/jayli/generator-mpi?branch=master)
 [![gemnasium deps][gemnasium-image]][gemnasium-url]
 [![node version][node-image]][node-url]
-[![npm download][https://img.shields.io/npm/dm/generator-mpi.svg?style=flat-square]][download-url]
+[![npm download][npm-download]][download-url]
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jayli/generator-mpi)
 
 [![generator-mpi](https://nodei.co/npm/generator-mpi.png)](https://npmjs.org/package/generator-mpi)
@@ -21,6 +21,7 @@ by bachi@taobao.com
 [travis-url]: https://travis-ci.org/kissyteam/util
 [node-image]: https://img.shields.io/badge/node.js-%3E=_0.12-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
+[npm-download]: https://img.shields.io/npm/dm/generator-mpi.svg?style=flat-square
 [download-url]: https://npmjs.org/package/generator-mpi
 
 
