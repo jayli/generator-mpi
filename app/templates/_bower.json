@@ -1,0 +1,17 @@
+{
+    "name": "<%= packageName %>",
+    "version": "<%= version %>",
+    "description": "<%= projectName %>",
+    "authors": [
+        "<%= author %> <<%= email %>>"
+    ],
+    "main": "./index.js",
+    "ignore": [
+        ".jshintrc",
+        "**/*.txt"
+    ],
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+}

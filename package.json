@@ -1,13 +1,13 @@
 {
-  "name": "generator-mini",
+  "name": "generator-mpi",
   "version": "0.1.0",
-  "description": "A Clam generator for Yeoman",
+  "description": "KISSY MINI 模块生成脚手架",
   "keywords": [
     "yeoman-generator",
     "generator-mini"
   ],
-  "homepage": "https://github.com/jayli/generator-mini",
-  "bugs": "https://github.com/jayli/generator-mini/issues",
+  "homepage": "https://github.com/jayli/generator-mpi",
+  "bugs": "https://github.com/jayli/generator-mpi/issues",
   "authors": [
     {
       "name": "bachi",
@@ -20,13 +20,15 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-	"url": "git@github.com:jayli/generator-mini.git"
+	"url": "git@github.com:jayli/generator-mpi.git"
   },
   "scripts": {
     "test": "mocha"
   },
   "dependencies": {
     "rmdir": "~1.0.4",
+    "promise": "",
+    "git-config": "0.0.6",
     "yeoman-generator": "~0.13.3"
   },
   "devDependencies": {
