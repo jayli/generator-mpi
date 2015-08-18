@@ -10,21 +10,24 @@ function Logo(contex) {
 
 	var logo = 
 		'\n' + 
-		'   ▄▄▄▄███▄▄▄▄      ▄███████▄  ▄█  \n' +
-		' ▄██▀▀▀███▀▀▀██▄   ███    ███ ███  \n' +
-		' ███   ███   ███   ███    ███ ███▌ \n' +
-		' ███   ███   ███   ███    ███ ███▌ \n' +
-		' ███   ███   ███ ▀█████████▀  ███▌ \n' +
-		' ███   ███   ███   ███        ███  \n' +
-		' ███   ███   ███   ███        ███  \n' +
-		'  ▀█   ███   █▀   ▄████▀      █▀   \n' + ' ' + version + '\n\n';
+	 	blue(' ▄▄       ▄▄ ') + yellow(' ▄▄▄▄▄▄▄▄▄▄▄ ') + red(' ▄▄▄▄▄▄▄▄▄▄▄ \n') +
+		blue('▐░░▌     ▐░░▌') + yellow('▐░░░░░░░░░░░▌') + red('▐░░░░░░░░░░░▌\n') +
+		blue('▐░▌░▌   ▐░▐░▌') + yellow('▐░█▀▀▀▀▀▀▀█░▌') + red(' ▀▀▀▀█░█▀▀▀▀ \n') +
+		blue('▐░▌▐░▌ ▐░▌▐░▌') + yellow('▐░▌       ▐░▌') + red('     ▐░▌     \n') +
+		blue('▐░▌ ▐░▐░▌ ▐░▌') + yellow('▐░█▄▄▄▄▄▄▄█░▌') + red('     ▐░▌     \n') +
+		blue('▐░▌  ▐░▌  ▐░▌') + yellow('▐░░░░░░░░░░░▌') + red('     ▐░▌     \n') +
+		blue('▐░▌   ▀   ▐░▌') + yellow('▐░█▀▀▀▀▀▀▀▀▀ ') + red('     ▐░▌     \n') +
+		blue('▐░▌       ▐░▌') + yellow('▐░▌          ') + red('     ▐░▌     \n') +
+		blue('▐░▌       ▐░▌') + yellow('▐░▌          ') + red(' ▄▄▄▄█░█▄▄▄▄ \n') +
+		blue('▐░▌       ▐░▌') + yellow('▐░▌          ') + red('▐░░░░░░░░░░░▌\n') +
+		blue(' ▀         ▀ ') + yellow(' ▀           ') + red(' ▀▀▀▀▀▀▀▀▀▀▀ ') + ' ' + green(version) + '\n\n';
+
                       
                            
-	logo += '==> http://m.kissyui.com' + '\n';
+	logo += purple('➭') + ' http://m.kissyui.com' + '\n' +
+			purple('➭') + ' http://github.com/jayli/generator-mpi' + '\n';
 
-	if (contex) {
-		logo += '\nCMD: ' + green(contex.generatorName.toUpperCase()) + '\n';
-	}
+	logo += '\nPlease follow these questions.\n';
 
 	return logo;
 }

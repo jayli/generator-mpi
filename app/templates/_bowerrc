@@ -1,4 +1,4 @@
 {
 	"directory":"./",
-	"shorthand_resolver":"http://gitlab.alibaba-inc.com/{{{owner}}}/{{{package}}}.git"
+	"shorthand_resolver":"http://<%= gitRepository %>/{{{owner}}}/{{{package}}}.git"
 }

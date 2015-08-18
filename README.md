@@ -4,17 +4,18 @@
 
 ### KISSY MINI 模块代码脚手架工具
 
-![](https://gw.alicdn.com/tps/TB15OqcJXXXXXcAXFXXXXXXXXXX-552-276.png_300x300.jpg)
+![](http://gw.alicdn.com/tps/TB13sGbJXXXXXbaXVXXXXXXXXXX-360-196.png_200x200.jpg)
 
-[KISSY MINI](http://m.kissyui.com) 模块生成脚手架工具，KISSY MINI 的模块是基于 bower 管理的模块包，原则上不支持线上地址直接引用，而是推荐通过 bower insall 的方式安装引用。这里的脚手架工具即是生成这个 bower 模块包的脚手架工具。
+[KISSY MINI](http://m.kissyui.com) 模块生成脚手架工具，KISSY MINI 的模块是基于 bower 的模块包，原则上不支持线上地址直接引用，而是推荐通过 bower insall 的方式安装引用。这里的脚手架工具即是生成这个 bower 模块包的脚手架工具。
 
 阿里旅行的 KISSY MINI 模块代码存放在 [gitlab](http://gitlab.alibaba-inc.com/groups/mpi) 上，安装组件时需要配好`.bowerrc`，
-
 
 	{
 		"directory":"./",
 		"shorthand_resolver":"http://gitlab.alibaba-inc.com/{{{owner}}}/{{{package}}}.git"
 	}
+
+这里的代码仓库前缀可以任意修改
 
 安装 KISSY MINI 模块时只需要执行
 

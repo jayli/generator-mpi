@@ -12,6 +12,7 @@ var gitConfig = require('git-config'),
 	curUserEmail = curGitUser.email;
 
 var MyGenerator = module.exports = function MyGenerator(args, options, config) {
+	this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
 
 	ABC.UIBase.apply(this, arguments);
 
@@ -45,7 +46,6 @@ var MyGenerator = module.exports = function MyGenerator(args, options, config) {
 
 			}.bind(that));
 
-
 	}.bind(this));
 };
 
@@ -78,13 +78,21 @@ MyGenerator.prototype.askFor = function askFor() {
 	var prompts = [
 		{
 			name   : 'projectName',
-			message: 'Name of Project?',
+			message: 'widget Name?(模块名)',
 			default: folderName,
 			warning: ''
 		},
 		{
+			name   : 'gitRepository',
+			message: 'Chose Your Git Repository(git仓库):',
+			type	 : 'list',
+			choices: ['gitlab.alibaba-inc.com', 'github.com'],
+			default: 'gitlab.alibaba-inc.com',
+			warning: ''
+		},
+		{
 			name   : 'projectDesc',
-			message: 'Description of Project?',
+			message: 'Description of this Widget?(描述)',
 			default: folderName,
 			warning: ''
 		},
@@ -96,13 +104,13 @@ MyGenerator.prototype.askFor = function askFor() {
 		},
 		{
 			name   : 'email',
-			message: 'Author Email:',
+			message: 'Author Email(邮箱):',
 			default: curUserEmail,
 			warning: ''
 		},
 		{
 			name   : 'version',
-			message: 'Version:',
+			message: 'Version(版本):',
 			default: '0.1.0',
 			warning: ''
 		}
@@ -117,6 +125,7 @@ MyGenerator.prototype.askFor = function askFor() {
 		this.packageName = props.projectName;// project-name
 		this.projectName = parseMojoName(this.packageName); //ProjectName
 		this.packageDesc = props.projectDesc;
+		this.gitRepository = props.gitRepository;
 		this.author = props.author;
 		this.email = props.email;
 		this.version = props.version;
@@ -128,7 +137,7 @@ MyGenerator.prototype.askFor = function askFor() {
 
 MyGenerator.prototype.bowerJSON = function bowerJSON() {
 	this.template('_bower.json', 'bower.json');
-	this.copy('_bowerrc', '.bowerrc');
+	this.template('_bowerrc', '.bowerrc');
 };
 
 MyGenerator.prototype.git = function git() {
