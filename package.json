@@ -1,6 +1,6 @@
 {
   "name": "generator-mpi",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "KISSY MINI 模块生成脚手架",
   "keywords": [
     "yeoman-generator",
@@ -28,7 +28,6 @@
   "dependencies": {
     "abc-generator": "~0.1.5",
     "rmdir": "~1.0.4",
-    "promise": "",
     "git-config": "0.0.6",
     "yeoman-generator": "~0.13.3"
   },

@@ -3,7 +3,6 @@ var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
 var ABC = require('abc-generator');
-var Promise = require('promise');
 var Logo = require('./logo').Logo;
 var exec = require('child_process').exec;
 var gitConfig = require('git-config'),
@@ -22,29 +21,7 @@ var MyGenerator = module.exports = function MyGenerator(args, options, config) {
 		var cb = this.async();
 		var that = this;
 
-		var loadCallback = function (loadName, error, resolve, reject) {
-			if (error !== null) {
-				console.error('Load ' + loadName + ' error: ' + error);
-				reject(error);
-			} else {
-				console.log('Load ' + loadName + ' success');
-				resolve();
-			}
-		};
-
-		// 安装 bower 依赖
-		var loadBowerConfigPromise = new Promise(function(resolve, reject) {
-
-			exec('bower install;', function (error, stdout, stderr) {
-				loadCallback('bower install done!!!', error, resolve, reject);
-			}.bind(that));
-
-		});
-
-		Promise.all([loadBowerConfigPromise])
-			.then(function() {
-
-			}.bind(that));
+		console.log(green('\n启动服务,命令行运行 here\n'));
 
 	}.bind(this));
 };
@@ -159,6 +136,7 @@ MyGenerator.prototype.app = function app() {
 	// 测试用例资源文件
 	this.copy('test/lib/async.js', 'test/lib/async.js');
 	this.copy('test/lib/chai.js','test/lib/chai.js');
+	this.copy('test/lib/mocha.js','test/lib/mocha.js');
 	this.copy('test/lib/mocha.css','test/lib/mocha.css');
 	this.copy('test/lib/should.js','test/lib/should.js');
 	this.copy('test/lib/simulate-dom-event.js','test/lib/simulate-dom-event.js');
