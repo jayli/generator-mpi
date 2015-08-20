@@ -25,7 +25,7 @@ function Logo(contex) {
                       
                            
 	logo += purple('➭') + ' http://m.kissyui.com' + '\n' +
-			purple('➭') + ' http://github.com/jayli/generator-mpi' + '\n';
+			purple('➭') + ' KISSY MINI 组件代码生成器' + '\n';
 
 	logo += '\nPlease follow these questions.\n';
 
