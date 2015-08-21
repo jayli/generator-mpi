@@ -42,7 +42,7 @@ by bachi@taobao.com
 
 > 如果你在阿里内网，请指向内网镜像 `sudo npm install -g tnpm --registry=http://registry.npm.alibaba-inc.com`
 
-KISSY MINI 模块包代码只能通过 bower 来管理，因此非常干净，不包含本地服务和构建，运行本地Demo和测试用例只需用个人习惯的Node服务即可，比如[serve-here](https://www.npmjs.com/package/serve-here)。
+KISSY MINI 模块包代码只能通过 bower 来管理，因此非常干净，不包含本地服务和构建，运行本地Demo和测试用例只需用个人习惯的Node服务即可，比如[here-ssi](https://www.npmjs.com/package/here-ssi)。
 
 首先安装三件套：
 
@@ -50,7 +50,7 @@ KISSY MINI 模块包代码只能通过 bower 来管理，因此非常干净，�
 
 然后安装本地服务和脚手架
 
-	tnpm install -g serve-here generator-mpi
+	tnpm install -g here-ssi generator-mpi
 
 完成。
 
@@ -91,7 +91,7 @@ KISSY MINI 模块包代码只能通过 bower 来管理，因此非常干净，�
 
 模块的研发完全基于本地 Demo 页面，无需构建和特别的本地环境配置，因此非常干净简单，代码存储直接提交在 gitlab 里即可，他人安装此模块只需通过`bower install`即可。模块文件是需要被具体的项目脚本构建的，构建工具参照[grunt-kmb](https://www.npmjs.com/package/grunt-kmb)或者[gulp-kmc](https://www.npmjs.com/package/gulp-kmc)。阿里旅行前端同学请使用 [clam](http://clam.alitrip.net) 构建工具来生成项目.
 
-因为已经安装好了`serve-here`服务，代码checkout到本地后，直接在项目根目录中执行`here`，即可开启服务
+因为已经安装好了`here-ssi`服务，代码checkout到本地后，直接在项目根目录中执行`here`，即可开启服务
 
 	here
 
