@@ -1,4 +1,6 @@
-## generator-mpi
+## [generator-mpi](https://github.com/jayli/generator-mpi)
+
+<img src="http://gw.alicdn.com/tps/TB13sGbJXXXXXbaXVXXXXXXXXXX-360-196.png" width="200" />
 
 by bachi@taobao.com
 
@@ -22,14 +24,11 @@ by bachi@taobao.com
 [npm-download]: https://img.shields.io/npm/dm/generator-mpi.svg?style=flat-square
 [download-url]: https://npmjs.org/package/generator-mpi
 
-
 ### KISSY MINI 模块代码脚手架工具
 
-<img src="http://gw.alicdn.com/tps/TB13sGbJXXXXXbaXVXXXXXXXXXX-360-196.png" width="200" />
+[KISSY MINI](http://m.kissyui.com) 模块生成脚手架工具，KISSY MINI 的模块是基于 bower 的模块包，原则上不支持线上地址直接引用，而是推荐通过 bower insall 的方式安装引用。这里的脚手架工具即是生成这个 bower 模块包的脚手架工具。KISSY MINI 的项目生成工具是[Generator-Mask](https://github.com/jayli/generator-mask)，两者配合使用效果更佳。
 
-[KISSY MINI](http://m.kissyui.com) 模块生成脚手架工具，KISSY MINI 的模块是基于 bower 的模块包，原则上不支持线上地址直接引用，而是推荐通过 bower insall 的方式安装引用。这里的脚手架工具即是生成这个 bower 模块包的脚手架工具。
-
-阿里旅行的 KISSY MINI 模块代码存放在 [gitlab](http://gitlab.alibaba-inc.com/groups/mpi) 上，安装组件时需要配好`.bowerrc`，
+你可以自己定制自己的模块将要存放在哪个git仓库。阿里旅行的 KISSY MINI 模块代码存放在 [gitlab](http://gitlab.alibaba-inc.com/groups/mpi) 上，安装组件时需要配好`.bowerrc`（这个文件会被 [Mask](https://github.com/jayli/generator-mask) 工具自动生成），
 
 	{
 		"directory":"./",
@@ -40,9 +39,9 @@ by bachi@taobao.com
 
 ### 工具安装
 
-> 如果你在阿里内网，请指向内网镜像 `sudo npm install -g tnpm --registry=http://registry.npm.alibaba-inc.com`
+> 如果你在阿里内网，请指向内网镜像 `sudo npm install -g tnpm --registry=http://registry.npm.alibaba-inc.com`，然后使用`tnpm`
 
-KISSY MINI 模块包代码只能通过 bower 来管理，因此非常干净，不包含本地服务和构建，运行本地Demo和测试用例只需用个人习惯的Node服务即可，比如[here-ssi](https://www.npmjs.com/package/here-ssi)。
+KISSY MINI 模块包代码只能通过 bower 来管理，因此非常干净，不包含本地服务和构建，运行本地Demo和测试用例只需用个人习惯的Node服务即可，推荐使用[here-ssi](https://www.npmjs.com/package/here-ssi)。
 
 首先安装三件套：
 
@@ -64,9 +63,9 @@ KISSY MINI 模块包代码只能通过 bower 来管理，因此非常干净，�
 
 ### 开发、发布
 
-在模块目录根目录中执行`here`便可启动本地服务，访问`demo/index.html`即可运行当前demo，访问`test/runner.html`即可运行当前测试用例。js 开发规范符合 CMD 规范，亦兼容 KMD 规范。
+在模块目录根目录中执行`here`便可启动本地服务，访问`demo/index.html`即可运行当前demo，访问`test/runner.html`即可运行当前测试用例。js 开发预发规范符合 CMD 的基本约定，亦兼容 [KMD](http://docs.kissyui.com/1.4/docs/html/guideline/kmd.html) 规范。
 
-代码版本管理基于 [Gitlab](http://gitlab.alibaba-inc.com) ，所以源码中目录和文件名看不到版本信息，基于Bower的版本需要自行手动修改`bower.json`，如果当前代码对其他模块有依赖，也需要手动修改`bower.json`。比如[offline-app-router](http://gitlab.alibaba-inc.com/mpi/offline-app-router)这个模块的[bower.json](http://gitlab.alibaba-inc.com/mpi/offline-app-router/blob/d1b59ec230a91705e258e63d79ca88059a11eae8/bower.json)的内容如下：
+代码版本管理默认基于 [Gitlab](http://gitlab.alibaba-inc.com) （阿里内网的代码仓库），所以源码中目录和文件名看不到版本信息，基于Bower的版本需要自行手动修改`bower.json`，如果当前代码对其他模块有依赖，也需要手动修改`bower.json`。比如[offline-app-router](http://gitlab.alibaba-inc.com/mpi/offline-app-router)这个模块的[bower.json](http://gitlab.alibaba-inc.com/mpi/offline-app-router/blob/d1b59ec230a91705e258e63d79ca88059a11eae8/bower.json)的内容如下：
 
 	{
 		"name": "offline-app-router",
