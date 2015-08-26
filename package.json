@@ -1,6 +1,6 @@
 {
   "name": "generator-mpi",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "KISSY MINI 模块生成脚手架",
   "keywords": [
     "yeoman-generator",
