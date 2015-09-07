@@ -2,6 +2,8 @@
 
 <img src="http://gw.alicdn.com/tps/TB13sGbJXXXXXbaXVXXXXXXXXXX-360-196.png" width="200" />
 
+[![Join the chat at https://gitter.im/jayli/generator-mpi](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jayli/generator-mpi?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 by bachi@taobao.com
 
 [![NPM version][npm-image]][npm-url]
